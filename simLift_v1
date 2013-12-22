@@ -1,0 +1,34 @@
+package simlift;
+import java.util.Scanner;
+
+public class SimLift {
+
+    public static void main(String[] args) {
+        int totalLift;
+        int totalFloor;
+        int capacity;
+        int time_InOut;
+        int time_OpenClose;
+        int time_FloorToFloor;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("How many lifts in the buliding?");
+        totalLift=sc.nextInt();
+        System.out.println("How many floors in the buliding?");
+        totalFloor=sc.nextInt();
+        System.out.println("What is the capacity of each lift?");
+        capacity=sc.nextInt();
+        System.out.println("How long does the passenger cost to enter the lift?");
+        time_InOut=sc.nextInt();
+        System.out.println("How long does the lift door cost to open and close?");
+        time_OpenClose=sc.nextInt();
+        System.out.println("How long does lift move from one location to next one?");
+        time_FloorToFloor=sc.nextInt();
+        System.out.println(totalLift+"  lifts in the building");
+        System.out.println(totalFloor+" floors in the building");
+        System.out.println(capacity+" capacity of lift");
+        System.out.println(time_InOut+"s for the passenger entering or leaving");
+        System.out.println(time_OpenClose+"s for the lift door open and close");
+        System.out.println(time_FloorToFloor+"s for the lift moving from one location to another");
+    }
+    
+}
